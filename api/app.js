@@ -23,6 +23,8 @@ client.connect();
 console.log('Connected successfully to server');
 const db = client.db(dbName);
 
+const superheroes = db.collection('superheroes');
+
 async function main() {
 
     try {
@@ -31,7 +33,7 @@ async function main() {
 
         db.collection('superheroes').deleteMany({});
 
-        const superheroes = db.collection('superheroes');
+        
 
         await superheroes.insertOne({
             casa: 'Marvel',
@@ -129,7 +131,7 @@ async function main() {
             urls: 'https://yoolk.ninja/wp-content/uploads/2019/07/Marvel-Hulk-1024x819.png',
             logo: 'https://1000marcas.net/wp-content/uploads/2021/07/Marvel-Comics-logo.jpg',
             anio_aparicion: '1962',
-            equipamiento: 'Escudo de vibranium'
+            equipamiento: 'Ninguno'
         });
 
         await superheroes.insertOne({
@@ -268,66 +270,66 @@ async function main() {
             casa: 'DC',
             nombre: 'Arthur Joseph Curry',
             nombre_pj: 'Aquaman',
-            biografia: 'El ombre de ahua',
+            biografia: 'Aquaman es un superhéroe que aparece en los cómics estadounidenses publicados por DC Comics. Creado por el artista Paul Norris y el escritor Mort Weisinger, el personaje debutó en More Fun Comics # 73 (noviembre de 1941). Inicialmente, una característica de respaldo en los títulos de antología de DC, Aquaman más tarde protagonizó varios volúmenes de una serie de cómics en solitario. Durante los últimos años de la década de 1950 y 1960, el período de recuperación de superhéroes conocido como la Edad de Plata, fue miembro fundador de la Liga de la Justicia. En la Edad Moderna de la década de 1990, los escritores interpretaron el personaje de Aquaman más seriamente, con historias que representan el peso de su papel como rey de la Atlántida.',
             urls: 'https://yoolk.ninja/wp-content/uploads/2019/07/dc-aquaman-1024x819.png',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
             anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            equipamiento: 'Tridente'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Selina Kyle',
             nombre_pj: 'Catwoman',
-            biografia: 'El ombre o no tan ombre, gato',
+            biografia: 'Aunque originalmente fue creada como rival de Batman, el título de héroe o villano para Catwoman es más ambiguo, ya que tenía su propio código moral, que le prohibía cometer asesinato, cosa que no coincide con la mayoría de los villanos. En su primera aparición en Batman N.º 1 (primavera de 1940), era conocida como La Gata y no usaba en su atuendo nada que se pareciera a un rasgo distintivo de los felinos: su disfraz era el de una anciana que robaba joyas. Ese mismo año, en el cómic El secreto de vida de Catwoman (otoño de 1940), el personaje se define mejor y se aclara su origen. Selina Kyle, azafata de una línea de aviación, tiene un accidente cuando el avión en que viajaba se estrella en una lejana región. A causa de este, sufre de amnesia, y su único recuerdo es la veterinaria de su padre, y particularmente los gatos de ella. Obsesionada por saber su origen, se aferra a esos recuerdos, que se convierten en el centro de su existencia.',
             urls: 'https://yoolk.ninja/wp-content/uploads/2021/03/DC-Comics-Catwoman-2-1024x819.png',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1940',
+            equipamiento: 'Látigo'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Victor Stone',
             nombre_pj: 'Cyborg',
-            biografia: 'El ombre casi robot',
+            biografia: 'Victor Stone es el hijo de Silas Stone y Elinore Stone, científicos que lo usan como sujeto de prueba para varios proyectos de mejora de inteligencia. Si bien estos tratamientos son en última instancia exitosos y el coeficiente intelectual de Victor posteriormente crece a niveles geniales, él crece para resentir su tratamiento. Victor entabla una amistad con Ron Evers, un joven sinvergüenza que lo lleva a tener problemas con la ley. Este es el comienzo de una lucha en la que Victor lucha por la independencia, participando en actividades que sus padres desaprueban, como el atletismo y abandonar sus estudios. La asociación de Victor con delincuentes menores de edad lo lleva por un camino oscuro en el que a menudo resulta herido, pero aún vive una vida "normal" en la que puede tomar sus propias decisiones. Sin embargo, este camino rebelde no entierra la conciencia de Víctor teniendo en cuenta que se niega a participar en los grandiosos planes de Evers de terrorismo por motivos raciales. La situación de Victor cambia radicalmente cuando visita el laboratorio de sus padres, donde se realizan experimentos de acceso interdimensional. En ese momento de su entrada, una criatura gelatinosa agresiva fue arrastrada accidentalmente y la madre de Victor es asesinada por ella. Luego se volvió contra Víctor y fue gravemente herido por su ataque antes de que su padre pudiera enviarlo de regreso a su dimensión nativa. Con su esposa muerta y su hijo mutilado, inconsciente y casi muerto por el incidente, Silas se ve impulsado a aprovechar el prototipo de investigación médica protética a la que tiene acceso para tratar a Victor. Desafortunadamente, Víctor solo recupera la conciencia después de que se instalaron extremidades artificiales e implantes en su cuerpo sin su consentimiento. Víctor estaba horrorizado por el descubrimiento de los componentes metálicos, que involucran la mayor parte del lado izquierdo de su cabeza y cara, y se enfureció por haber preferido morir antes que ser víctima de las manipulaciones de su padre.',
             urls: 'https://yoolk.ninja/wp-content/uploads/2019/07/DC-Comics-Cyborg-1024x819.png',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1980',
+            equipamiento: 'Sensores y armamento avanzado'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Boston Brand',
             nombre_pj: 'Deadman',
-            biografia: 'El ombre muerte',
+            biografia: 'Deadman es un antiguo acróbata de circo llamado Boston Brand, que fue asesinado durante un espectáculo de trapecio por un asaltante misterioso conocido sólo como el gancho. A su espíritu se le da el poder para poseer cualquier ser vivo, por una diosa hindú de nombre Rama Kushna, a fin de buscar a su asesino y obtener justicia. Sin embargo, Deadman se ve obligado a ayudar a los demás, mientras realizaba su búsqueda, utilizando su poder para intervenir y controlar a las personas que viven para ayudar a los inocentes. Deadman descubrió que unos delincuentes utilizan el circo ambulante para el contrabando de heroína y cocaína. En última instancia, Boston descubre la verdad sobre su asesinato y llegó a aceptar su papel como interventor en la vida de los mortales.',
             urls: 'https://yoolk.ninja/wp-content/uploads/2019/07/dc-deadman-1024x819.png',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1967',
+            equipamiento: 'Anillo de poder blanco'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Bruce Wayne',
             nombre_pj: 'Batman',
-            biografia: 'El ombre de mursiegalo',
+            biografia: 'Bruce Wayne es hijo del Dr. Thomas Wayne y su esposa Martha, dos empresarios exitosos y reconocidos en la sociedad de Gotham City. Su infancia transcurre en medio de privilegios y riquezas, predominantes durante su estancia en la mansión familiar. A los ocho años, cuando salían de una función de cine, sus padres son víctimas de un asalto en el que pierden la vida, asesinados por el delincuente Joe Chill; Bruce abrumado por un fuerte sentimiento de culpa, promete que hará todo lo posible por hacer de su ciudad un lugar más seguro, combatiendo el delito en cualquiera de sus formas. Con el afán de cumplir su sentencia, se somete a un riguroso entrenamiento físico y mental —aunque luego se percata de la necesidad de una identidad secreta, ya que según Wayne: «Los criminales son supersticiosos y cobardes, por lo que mis habilidades tienen que aprovechar sus temores para intimidarlos. Debo ser una criatura nocturna, oscura e impactante. En ese mismo relato, la intromisión repentina de un murciélago que entra a través de la ventana de su cubículo influye en su idea de convertirse en el nuevo héroe: Batman.',
             urls: 'https://yoolk.ninja/wp-content/uploads/2019/07/DC-Comics-batman-1024x819.png',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1939',
+            equipamiento: 'Traje negro, equipamiento y armamento de alta tecnología'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Harleen Frances Quinzel',
             nombre_pj: 'Harley Queen',
-            biografia: 'El ombre o no tan ombre, del bromas ',
+            biografia: 'Harleen Quinzel, la mayor de dos hijos, nació en Bensonhurst (Brooklyn), Nueva York, de un matrimonio de cristianos judíos. Quinzel se interesó en la mente humana en una edad temprana para poder comprender todo lo que el estafador de su padre le hizo a su familia. La neoyorquina desarrolló su obsesión por el Joker durante sus años en la Universidad de Gotham donde estudió Psiquiatría. Para entrar al programa, presentó una idea que creía sería un buen eje central para su tesis de graduación: la intersección entre el amor y el crimen. Según ella, «las únicas dos circunstancias bajo las cuales una persona ignora las reglas de la sociedad [son]: cuando cometen un crimen o cuando se enamoran». Sin embargo, Quinn indujo el aparente suicidio de su novio, Guy Kopsi, a través el experimento para comprobar su teoría. Los hechos «caóticos» la llevaron a pensar que comprendía la psicología del Joker y declaró que haría lo necesario para conseguir una pasantía en el manicomio Arkham.',
             urls: 'https://yoolk.ninja/wp-content/uploads/2021/03/DC-Comics-Harley-Queen-1024x819.png',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1992',
+            equipamiento: 'Armas de fuego'
         });
         
         await superheroes.insertOne({ 
@@ -471,29 +473,59 @@ app.get('/individual/:id', async (req, res) =>{
     };
 });
 
-app.post('/subscribir', (req, res) =>{
+app.post('/agregar', async (req, res) =>{
+    const {casa, nombre, nombre_pj, biografia, urls, logo, anio_aparicion, equipamiento}=req.body;
     try{
-        let {canal}=req.body;
-
+        await db.collection('superheroes').insertOne({ 
+            casa: casa,
+            nombre: nombre,
+            nombre_pj: nombre_pj,
+            biografia: biografia,
+            urls: urls,
+            logo: logo,
+            anio_aparicion: anio_aparicion,
+            equipamiento: equipamiento
+        });
 
     } catch (error) {
         console.log(error);
     ;}
 });
 
-app.post('/desubscribir/:canal', (req, res) =>{
+app.delete('/eliminar/:name', async (req, res) =>{
+    const {name}=req.params;
     try {
-        let {canal}=req.params;
+        await db.collection('superheroes').deleteOne({ nombre_pj: name });
 
     } catch (error) {
         console.log(error);
     }
 });
 
-app.post('/publicar/:canal', (req, res) =>{
+app.put('/actualizar/:name', async (req, res) =>{
     try {
-        let {message}=req.body;
-        let {canal}=req.params;
+        const {casa, nombre, nombre_pj, biografia, urls, logo, anio_aparicion, equipamiento}=req.body;
+        const {name}=req.params;
+
+        await superheroes.updateOne(
+            {
+                nombre_pj: name
+            }, 
+            {
+                $set: {
+                    casa: casa,
+                    nombre: nombre,
+                    nombre_pj: nombre_pj,
+                    biografia: biografia,
+                    urls: urls,
+                    logo: logo,
+                    anio_aparicion: anio_aparicion,
+                    equipamiento: equipamiento
+                }
+            }
+        );
+        console.log("Datos del body:", req.body)
+        console.log(res.statusCode);
         
     } catch (error) {
         console.log(error)
