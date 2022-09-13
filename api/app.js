@@ -40,7 +40,7 @@ async function main() {
             nombre: 'Steve Rogers', 
             nombre_pj: 'Capitan America',
             biografia: 'Steven Rogers nació en el Lower East Side de Manhattan, en la ciudad de Nueva York, en 1918, hijo de inmigrantes irlandeses pobres, Sarah y Joseph Rogers.Joseph murió cuando Steve era un niño, y Sarah murió de neumonía mientras Steve era un adolescente. A principios de 1940, antes de la entrada de Estados Unidos en la Segunda Guerra Mundial, Rogers es un alto y escuálido estudiante de bellas artes que se especializa en la ilustración y un escritor y artista de cómics. Perturbado por el ascenso de Adolf Hitler al poder, Rogers intenta alistarse, pero es rechazado debido a su frágil cuerpo. Su resolución atrae la atención del general del ejército de Estados Unidos, Chester Phillips y "Proyecto: Renacimiento". Rogers se usa como sujeto de prueba para el proyecto del Supersoldado, recibiendo un suero especial fabricado por el Dr. Josef Reinstein, que luego cambió retroactivamente a un nombre en clave para el científico Abraham Erskine. El suero es un éxito y transforma a Steve Rogers en un ser humano casi perfecto con fuerza, agilidad, resistencia e inteligencia máximas. El éxito del programa deja a Erskine preguntándose acerca de replicar el experimento en otros seres humanos. El proceso en sí ha sido detallado de manera inconsistente: mientras que en el material original se muestra a Rogers recibiendo inyecciones del supersuero, cuando el origen se volvió a contar en la década de 1960, la Autoridad del Código del Cómic ya había impuesto un veto sobre la descripción gráfica de la droga, ingesta y abuso, y por lo tanto el supersuero fue reconvertido en una fórmula oral. Las cuentas posteriores insinúan una combinación de tratamientos orales e intravenosos con un régimen de entrenamiento extenuante, que culmina con la exposición a Vita-Ray.',
-            urls: ['https://yoolk.ninja/wp-content/uploads/2019/07/marvel-captain-america-1024x819.png'],
+            urls: ['https://yoolk.ninja/wp-content/uploads/2019/07/marvel-captain-america-1024x819.png', 'https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2019/05/hipertextual-avengers-endgame-futuro-capitan-america-2019781893-scaled.jpg'],
             logo: 'https://1000marcas.net/wp-content/uploads/2021/07/Marvel-Comics-logo.jpg',
             anio_aparicion: '1941',
             equipamiento: 'Escudo de vibranium'
@@ -51,7 +51,7 @@ async function main() {
             nombre: 'Stephen Strange', 
             nombre_pj: 'Dr Strange',
             biografia: 'Stephen Strange es un médico especializado en neurocirugía, codicioso y egocéntrico, que solo se preocupa por la riqueza de su carrera, hasta que en un accidente sufrió una enfermedad nerviosa en sus manos que le obligó a retirarse. Cuando su padre murió, su hermano fue a visitarlo para recriminarle que no fue al funeral ese día. Stephen estaba con una chica, por lo que su hermano salió enfadado. Estaba nevando esa noche y hubo un accidente en el cual su hermano murió al ser atropellado. Stephen hizo que su cadáver fuera criogenizado hasta el día en que la ciencia lo pudiera revivir. Un día escuchó hablar en un puerto acerca de un tibetano con poderes, por lo que fue a verle y con el aprendió las artes místicas, ayudó a su mentor el Anciano, quien poseía el título de Hechicero Supremo de esta dimensión, a repeler todo el mal místico que quiera causar daño a esta dimensión; tuvo enfrentamientos con sus enemigos, algunos traidores como el Barón Mordo quien deseaba el título de hechicero supremo, y consiguió vencer a entidades místicas extra-dimensionales como Pesadilla, Dormammu, entre otros.',
-            urls: ['https://yoolk.ninja/wp-content/uploads/2019/07/Marvel-DrStrange-1024x819.png'],
+            urls: ['https://yoolk.ninja/wp-content/uploads/2019/07/Marvel-DrStrange-1024x819.png','https://www.cinemascomics.com/wp-content/uploads/2021/05/Filtran-los-planes-para-Doctor-Strange-3.jpg', 'https://i0.wp.com/wipy.tv/wp-content/uploads/2020/11/sinopsis-de-doctor-strange-2.jpg'],
             logo: 'https://1000marcas.net/wp-content/uploads/2021/07/Marvel-Comics-logo.jpg',
             anio_aparicion: '1963',
             equipamiento: 'Ojo de Agamotto, Orbe de Agamoto, Capa de Levitación, Libro de los Vishanti'
@@ -336,99 +336,99 @@ async function main() {
             casa: 'DC',
             nombre: 'Clark Kent',
             nombre_pj: 'Superman',
-            biografia: 'El ombre super ',
+            biografia: ' Superman nace en un mundo extraño a una especie tecnológicamente avanzada que se parece a los humanos. Poco después de nacer, su planeta se destruye en un cataclismo natural, pero el padre científico de Superman previó la calamidad y salva a su hijo bebé enviándolo a la Tierra en una pequeña nave espacial. Lamentablemente, la nave es demasiado pequeña para llevar a alguien más, por lo que los padres de Superman se quedan atrás y mueren. Las primeras tiras de periódicos nombran el planeta "Krypton", el bebé "Kal-L" y sus padres biológicos "Jor-L" y "Lora";73​ sus nombres fueron cambiados a "Jor-el" y "Lara" en una novela de 1942 de George Lowther. La nave aterriza en el campo estadounidense, donde los Kents, una pareja de agricultores, descubren al bebé. Los Kents nombran al niño Clark y lo crían en una comunidad agrícola.',
             urls: ['https://yoolk.ninja/wp-content/uploads/2019/07/DC-Comics-Superman-1024x819.png'],
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1938',
+            equipamiento: 'Traje'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Jonn Jonzz',
             nombre_pj: 'Martian Manhunter',
-            biografia: 'El ombre pito de hulk ',
+            biografia: 'En su primera historia, Jonn Jonzz es teleportado accidentalmente a la Tierra por el científico conocido como el Dr. Erdel, que, inmediatamente después, sufrió un ataque al corazón y murió, dejando al marciano varado en la Tierra. Jonn es capaz de usar sus poderes para modificar su apariencia, por lo que adopta la identidad del detective de policía John Jones. Así, se une a la policía, usando en secreto sus poderes para ayudar a los habitantes de la Tierra. En revisiones posteriores de la historia, John Jones es un detective de policía fallecido, adoptando así el Detective Marciano su identidad y desarrollándose sus aventuras en la ciudad ficticia de Middleton, en Colorado. Finalmente, Jonn revela su existencia al mundo, comenzando a actuar abiertamente como un superhéroe y convirtiéndose en miembro fundador de la Liga de la Justicia. Luego se ve obligado a abandonar la identidad de John Jones cuando este es "asesinado" en público. Tras esto, Jonn se encontraría durante varios años envuelto en la aventura mística relacionada con la Cabeza de Diabolu',
             urls: ['https://yoolk.ninja/wp-content/uploads/2021/03/DC-Comics-Martian-Manhunter-2-1024x819.png'],
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1955',
+            equipamiento: 'Traje'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Barry Allen',
             nombre_pj: 'Flash',
-            biografia: 'El ombre rapido',
+            biografia: 'Bartholomew Henry "Barry" Allen es un científico asistente de la División de Ciencia Criminal y Forense del Departamento de Policía de Ciudad Central en 1956, conocido por ser lento y llegar siempre tarde a su trabajo, lo cual enojaba a su prometida Iris West. Una noche, un rayo cayó en su laboratorio lleno de químicos que bañaron a Allen, creando un accidente que le otorgaría una súper velocidad e increíbles reflejos (también la capacidad de viajar en el tiempo y entre dimensiones). Con un traje rojo y el símbolo de un rayo (que recuerda al original Capitán Maravilla de Fawcett Comics), su novia lo nombró "Flash", (ya que cuando era niño algo veloz mató a su madre y Barry dijo que fue como un flash) empezando así a combatir el crimen en Ciudad Central. Como civil usaba un anillo del cual extraía su traje, el cual podía encoger por medio de un gas. Flash era conocido por en ocasiones bromear contra sus enemigos, y también una característica que lo hizo temido cuando regresó de la muerte es tratar a todos sus enemigos por igual, a diferencia de los otros velocistas que trataban a Capitán Frío y a sus secuaces como tontos comparados con Gorilla Grodd y el Profesor Zoom. En su identidad civil, almacena el traje comprimido en un anillo especial mediante el uso de un gas especial que podría comprimir fibras de tela a una fracción muy pequeña de su tamaño normal.',
             urls: ['https://yoolk.ninja/wp-content/uploads/2019/07/dc-flash-1024x819.png'],
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1940',
+            equipamiento: 'Traje a prueba de friccion, comunicadores'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Todd Phillips',
             nombre_pj: 'Joker',
-            biografia: 'El bromas',
+            biografia: 'Si bien sus orígenes y rasgos han variado con el transcurso del tiempo, por lo general se le asocia con una personalidad psicópata con un humor sádico y retorcido, lo que le ha llevado a ser catalogado como la antítesis de Batman. Con la excepción de una etapa en la que mantuvo un rol de bromista simple, desde los años 1970 Joker ha preservado sus orígenes siniestros y ha estado involucrado en ciertos momentos decisivos de Batman, como el asesinato de Jason Todd y la parálisis de Barbara Gordon. Su apariencia física —caracterizada por el rostro desfigurado, la piel blanca, el cabello teñido de verde y los labios rojos— proviene de los efectos de la caída accidental del criminal en un recipiente de químicos.',
             urls: ['https://yoolk.ninja/wp-content/uploads/2019/07/dc-joker-alt-1-1024x819.png'],
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1940',
+            equipamiento: 'Ingeniosas armas creadas por él mismo'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Oswald Chesterfield Cobblepot',
             nombre_pj: 'Pinguino',
-            biografia: 'El ombre pinhuino',
+            biografia: 'Nacido como Oswald Chesterfield Cobblepot, el Pingüino fue acosado de niño por su baja estatura, su peso, y su nariz en forma de pico. En algunos medios, sus dedos están unidos, dando lugar a manos parecidas a aletas. Varias historias cuentan que de niño fue obligado a llevar siempre un paraguas por su madre sobre-protectora, debido a la muerte de su padre por neumonía después de empaparse por la lluvia. Su madre era dueña de aves mascotas, las cuales Cobblepot veía como sus únicos amigos. En algunas versiones, Cobblepot se convierte en criminal después de que su madre muera y los pájaros son embargados para pagar las deudas de su madre; en otras, él es un marginado en su familia de alta sociedad, y su rechazo lo lleva a convertirse en un criminal. De acuerdo con sus orígenes, el Pingüino persigue su carrera criminal con clase. Él prefiere la vestimenta formal, vistiendo un sombrero de copa, un monóculo y esmoquin durante sus crímenes.',
             urls: ['https://yoolk.ninja/wp-content/uploads/2019/07/dc-penguin-1024x819.png'],
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
             anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            equipamiento: 'Paraguas contenedora de armas letales'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Diana Prince',
             nombre_pj: 'Mujer Maravilla',
-            biografia: 'El ombre o no tan mujer, increible',
+            biografia: 'Diana era miembro de una tribu de mujeres llamadas las Amazonas, nativa de Isla Paraíso. Esta era una isla aislada situada en medio de un vasto océano, allí el capitán Steve Trevor tuvo un accidente aéreo donde logró apenas aterrizar su aeronave cerca a la isla, fue encontrado vivo pero inconsciente. Diana lo encontró junto a una compañera amazona. Diana le cuidó hasta que sanó pero terminó enamorándose de él. Se llevó a cabo una competencia entre todas las amazonas ante la corte de la madre de Diana, Hipólita la Reina de las Amazonas, con el fin de determinar quién era la más digna de entre todas las mujeres para llevar de regreso a Steve al mundo exterior; Hipólita le adjudicaría a la ganadora la responsabilidad de entregarle al capitán Steve Trevor su regreso al exterior y para poder luchar por la justicia. Hipólita le prohibía a Diana participar en el concurso; no obstante, aun así ella tomó parte, usando una máscara para ocultar su identidad. Ganó el concurso y se revela a sí misma, sorprendiendo a su madre Hipólita, que al final se dejaría llevar por el deseo de su hija Diana para que fuese al mundo de los hombres. Ella entonces regresa a salvo a Steve Trevor de vuelta a su casa y se le concede un vestido especial hecho por su propia madre para llevar su nuevo papel como Mujer Maravilla.',
             urls: ['https://yoolk.ninja/wp-content/uploads/2021/03/DC-Comics-Wonder-Woman-1024x819.png'],
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
             anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            equipamiento: 'Lazo de la Verdad, Brazaletes, Espada, Escudo, Tiara'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Slade Joseph Wilson',
             nombre_pj: 'Deathstroke',
-            biografia: 'El ombre antiamigo de flecha',
+            biografia: 'A los 16 años de edad, Slade Wilson decidió entrar en el ejército, escapó de casa y mintió sobre su edad para poder ser aceptado en el ejército. Pronto mostró un gran talento muy superior al de cualquier otro soldado y fue promovido rápidamente una y otra vez hasta que su excelente reputación lo llevó a ser reconocido por Adeline Kane, una instructora militar, con quien más tarde comenzaría una relación amorosa y con quien se casaría con el tiempo. Poco después del nacimiento de su primer hijo, Grant Wilson, el mismo Slade se ofreció como voluntario para un experimento médico para el ejército diciéndole que era una prueba para defenderse del suero de la verdad (más tarde se revelaría que fue una prueba para crear un proyecto de super-soldados). El cuerpo de Slade reaccionaría violentamente respecto al experimento y quedaría postrado en la cama tras el nacimiento de su segundo hijo, Joseph Wilson. Más tarde Slade descubriría que el experimento había funcionado y de hecho que había mejorado sus sentidos y sus reflejos más allá de cualquier hombre común y corriente.',
             urls: ['https://yoolk.ninja/wp-content/uploads/2021/03/DC-Comics-Deathstroke-1024x819.png'],
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1980',
+            equipamiento: 'Traje y armas'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Billy Batson',
             nombre_pj: 'Shazam',
-            biografia: 'El reconocedor de musica',
+            biografia: 'William Joseph "Billy" Batson, es un vendedor de periódicos de 12 (más tarde 14) años sin hogar, que duerme en la estación de metro de su ciudad natal (originalmente Nueva York), más tarde referido en publicaciones de DC como Fawcett City). Un hombre misterioso con una capa verde le pide a Billy que lo siga hasta la estación de metro. Un vagón de metro mágico pintado en formas y colores inusuales los acompaña a una sala subterránea del trono, habitada por un hombre muy anciano con una larga barba y túnica blanca. A medida que el hombre de verde desaparece, el anciano en el trono le explica a Billy que él es el Mago Shazam, y que ha usado los poderes de "los dioses" - Salomón, Hércules, Atlas, Zeus, Aquiles y Mercurio, de ahí el nombre "Shazam", para combatir el mal durante más de 3.000 años. Sin embargo, ahora ha envejecido demasiado para continuar y necesita un sucesor. El mago explica que Billy fue elegido debido a su desgracia: había sido expulsado por un tío codicioso que le robó su herencia después de la muerte de sus padres (las posteriores recuentos del origen también señalarían que Billy fue elegido por ser "puro de corazón").',
             urls: ['https://yoolk.ninja/wp-content/uploads/2019/07/dc-shazam-1024x819.png'],
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1940',
+            equipamiento: 'Traje'
         });
         
         await superheroes.insertOne({ 
             casa: 'DC',
             nombre: 'Orion',
             nombre_pj: 'Orion',
-            biografia: 'El ombre arquero con doble vida',
+            biografia: 'Orión es el segundo hijo de Darkseid; dictador de Hellish Apokolips. Es el medio hermano de Kalibak y Grayven. Más tarde se casa con Bekka, la hija del líder de la Resistencia Apokolips, Himon. Cuando era niño, Orion fue cambiado al líder benevolente de Nuevo Génesis, Highfather por Scott Free, el propio hijo de Highfather, en el Pacto (de paz) entre Nuevo Génesis y Apokolips. Criado como el hijo del Alto Padre Izaya, bajo su cuidado amoroso, a Orión se le enseñó a controlar y enfocar su ira, y Orión llegó a valorar profundamente su hogar adoptivo y sus ideales. Este camino hacia la madurez no fue una tarea fácil dado que su herencia hervía con la rabia del brutal y despiadado Darkseid. Aprender a controlar esa naturaleza oscura consumió gran parte de la juventud de Orión. Sin embargo, además del cuidado de su padre adoptivo, sus amigos entre los Nuevos Dioses, particularmente Lightray, lo ayudaron a canalizar su Lado Oscuro hacia la protección de su mundo natal adoptado, Nuevo Génesis. Como resultado de esa lucha personal, los rasgos heredados de Orión y su enfoque aprendido le permitieron convertirse en el guerrero y héroe más poderoso de Nuevo Genesis. Su habilidad de lucha, resistencia, implacabilidad y crueldad le han valido el apodo de "El perro de la guerra", que todavía ocasionalmente necesita la ayuda de su Caja Madre para ayudar a controlar sus emociones cuando amenazan con vencerlo.',
             urls: ['https://yoolk.ninja/wp-content/uploads/2021/03/DC-Comics-Orion-1024x819.png'],
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1024px-DC_Comics_logo.svg.png',
-            anio_aparicion: '1941',
-            equipamiento: 'Escudo de vibranium'
+            anio_aparicion: '1971',
+            equipamiento: 'Traje'
         });
 
         // const results = await db.collection('movies').find({ title: 'Back to the Future'});
