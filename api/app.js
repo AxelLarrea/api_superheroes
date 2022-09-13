@@ -6,7 +6,6 @@ const port = 4000;
 
 
 app.set('port',port);
-
 app.use(express.json())
 app.use(cors());
 
@@ -32,7 +31,6 @@ async function main() {
         // db.createCollection('superheroes');
 
         db.collection('superheroes').deleteMany({});
-
         
 
         await superheroes.insertOne({
