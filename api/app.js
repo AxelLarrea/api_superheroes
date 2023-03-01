@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 const express = require('express');
 const cors = require('cors');
-const app= express();
+const app = express();
 const port = 4000;
 
 
@@ -11,8 +11,11 @@ app.use(cors());
 
 
 // Connection URL
-const url = 'mongodb://api_superheroes_db_1:27017';
-const client = new MongoClient(url);
+const url = 'mongodb://api_superheroes-db-1:27017';
+const client = new MongoClient(url,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
 
 // Database Name
@@ -22,17 +25,16 @@ client.connect();
 console.log('Connected successfully to server');
 const db = client.db(dbName);
 
-const superheroes = db.collection('superheroes');
-
 async function main() {
-
+    
     try {
+        
+        const superheroes = db.collection('superheroes');
         // db.createCollection('movies');
         // db.createCollection('superheroes');
 
         db.collection('superheroes').deleteMany({});
         
-
         await superheroes.insertOne({
             casa: 'Marvel',
             nombre: 'Steve Rogers', 
@@ -447,6 +449,15 @@ async function main() {
 
 main();
 
+
+app.get('/', (req, res) => {
+    try {
+        res.send('holita');
+    } catch (error) {
+        console.log(error)
+    }
+});
+        
 
 app.get('/todos', async (req, res) =>{
     try {
